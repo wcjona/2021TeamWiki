@@ -1,0 +1,60 @@
+.navbar-header{
+    margin-left:5px;
+    width:100%;
+}
+  
+.logo{
+    margin-left: 10%;
+}
+body{
+
+    background: #353535;
+}
+.navbar{
+    background-color: #191919;
+}
+.btn{
+    margin: 10px; 
+    width: 25%; 
+    line-height: 150px;
+}
+.row {
+    margin-top: 5%;
+    height: 200px;
+}
+.banner{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.nav-link {
+    color: white!important;
+    font-family: Articulat CF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 90%;
+    line-height: 27px;
+    text-transform: capitalize;
+    }
+
+.dropdown .dropdown-menu{
+    background-color: #363636;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+}
+.dropdown .dropdown-menu a{
+    color: white;
+}
+.dropdown .dropdown-menu a:hover
+{
+  color: #35eab7;
+  background-color: #363636;
+}
+
+.dropdown-toggle::after {
+    color: #35EAB7;
+}
+#banner img{
+    margin: 0;
+    display: block;
+}
