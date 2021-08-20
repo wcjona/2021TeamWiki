@@ -2,7 +2,6 @@
     margin-left:5px;
     width:100%;
 }
-  
 .logo{
     margin-left: 10%;
 }
@@ -11,6 +10,7 @@ body{
     background: #353535;
 }
 .navbar{
+    margin-top: 16px;
     background-color: #191919;
 }
 .btn{
@@ -22,11 +22,14 @@ body{
     margin-top: 5%;
     height: 200px;
 }
-.banner{
+img{
     width: 100%;
-    display: block;
-    margin: 0 auto;
 }
+
+.banner{
+    margin-top: 16px;
+}
+
 .nav-link {
     color: white!important;
     font-family: Articulat CF;
@@ -36,9 +39,9 @@ body{
     line-height: 27px;
     text-transform: capitalize;
     }
-
 .dropdown .dropdown-menu{
     background-color: #363636;
+    outline: black;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
 }
@@ -48,13 +51,151 @@ body{
 .dropdown .dropdown-menu a:hover
 {
   color: #35eab7;
-  background-color: #363636;
+  background-color: #555;
+  outline: black;
 }
 
 .dropdown-toggle::after {
     color: #35EAB7;
 }
-#banner img{
+.underBanner{
+    width: 100%;
     margin: 0;
-    display: block;
 }
+.nav-item{
+    margin-right: 1%;
+}
+.navbar-nav {
+    padding-right: 5%;
+}
+.contentBlock{
+    background-color: #444444;
+    padding: 10%;
+    box-shadow: 0 0 15px #232323;
+}
+#projectComponent{
+    margin: 1% 5%;
+}
+#navbar .dropdown-menu-left{
+    left:auto;
+    right:0;
+    margin-right:-10px;
+}
+
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 17%;
+    position: absolute;
+    height: 100%;
+    overflow: auto;
+
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: white;
+    background-color: #353535;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+   a.active {
+    color: #21DEA8;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: #35eab7;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.contentBlock {
+    margin-left: 18%;
+    height: 5000px;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    margin-top: 75px;
+    padding-top: 0;
+  }
+
+  .accordion-item, .sidebar-button{
+    background-color: transparent; 
+      color: white;
+      border: none;
+      font-size: medium;
+  }
+  .sidebar-button{
+    font-family: Articulat CF;
+    font-size: large;
+  }
+  .sidebar{
+    margin-left: 5%;
+  }
+  /* .accordion button:active{
+    color: #35eab7;
+  } */
+  .changeColor{
+    font-weight: bold;
+  }
+  @media (max-width:638px) {
+    .accordion-item{
+      font-size:small;
+    }
+  }
+  @media (max-width:464px) {
+    .accordion-item{
+      font-size:x-small;
+    }
+  }
+
+  /* button:active {
+    background: blue;
+  }
+   */
+
+  svg {
+    position: sticky;
+    transform: rotate(-90deg);
+  }
+  
+svg .progress-bar {
+    stroke: url(#grad);
+    transition: stroke-dashoffset 0 ease-in-out; 
+    filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.2));
+  }
+  svg {
+    stroke: transparent; /*background stroke color*/
+    stroke-width: 10px;
+    /* stroke-linecap: round; */
+    fill: transparent;
+  }
+  .inner-circle{
+    stroke: #35eab7; /*background stroke color*/
+    stroke-width: 1px;
+  }
+  .inner-circles{
+    stroke: url(#grad1);
+    stroke-width: 1px;
+    border-top-right-radius:0;
+    border-top-left-radius:0;
+    border-bottom-right-radius:0;
+    border-bottom-left-radius:100%;
+  
+  }
+  
+  #pct{
+    color: transparent;
+  }
+  .pct{
+    position: fixed;
+    top: 10.5rem;
+    left: 7.6rem;
+    color: white !important;
+    text-align: center;
+  }
