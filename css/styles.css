@@ -123,9 +123,10 @@ img{
   }
   .sticky {
     position: fixed;
+    /* display: hidden; */
     top: 0;
-    margin-top: 75px;
-    padding-top: 0;
+    padding-top: 125px;
+    overflow: hidden;
   }
 
   .accordion-item, .sidebar-button{
@@ -175,6 +176,7 @@ svg .progress-bar {
   }
   .complete{
     width: var(--sidebar-width, 200px);
+    margin-right: -200px;
     height: 200px; 
     z-index: 2;
     stroke: transparent; /*background stroke color*/
@@ -182,7 +184,7 @@ svg .progress-bar {
     /* stroke-linecap: round; */
     fill: transparent;
     position: sticky;
-    margin-top: -30px;
+    margin-top: -75px;
     transform: rotate(-90deg);
     transform-origin: center;
   }
@@ -197,7 +199,6 @@ svg .progress-bar {
     border-top-left-radius:0;
     border-bottom-right-radius:0;
     border-bottom-left-radius:100%;
-  
   }
   
   #pct{
@@ -205,9 +206,17 @@ svg .progress-bar {
   }
   .pct{
     position: absolute;
-    top: 9%;
-    left: 25%;
-    color: white !important;
+    top: 9rem;
+    left: 2.5rem;
+    color: #35EAB7 !important;
+    font-family: Articulat CF;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 34px;
     text-align: center;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
   }
   
