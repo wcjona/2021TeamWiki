@@ -78,7 +78,7 @@ img{
     box-shadow: 0 0 15px #232323;
 }
 #projectComponent{
-    margin: 1% 5%;
+    margin: 1% 10%;
 }
 #navbar .dropdown-menu-left{
     left:auto;
@@ -118,8 +118,13 @@ img{
   
   /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
   div.contentBlock {
+<<<<<<< HEAD
     margin-left: var(--sidebar-width, 200px);
     height: 5000px;
+=======
+    margin-left: 18%;
+  
+>>>>>>> 33145d2e29ddf8138e895c4cea89af59e04921ab
   }
   .sticky {
     position: fixed;
@@ -200,11 +205,11 @@ svg .progress-bar {
     border-bottom-right-radius:0;
     border-bottom-left-radius:100%;
   }
-  
   #pct{
     color: transparent;
   }
   .pct{
+<<<<<<< HEAD
     position: absolute;
     top: 9rem;
     left: 2.5rem;
@@ -220,3 +225,49 @@ svg .progress-bar {
 
   }
   
+=======
+    position: fixed;
+    top: 9rem;
+    left: 7rem;
+    color: white !important;
+    text-align: center;
+  }
+  h1, h2{
+    color: #21DEA8;
+    font-family: Articulat CF;
+    font-style: normal;
+    font-weight: 800;
+  }
+  h1{
+    text-align: center;
+    font-size: xx-large;
+    margin-top:2%;
+  }
+  .top-h1{
+    margin-top:0%;
+  }
+  h2{
+    font-size: medium;
+    margin-top: 3%;
+  }
+  p{
+    margin-top: 3%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: small;
+    color: white;
+  }
+  i{
+    box-shadow: 0 0 5px #232323;
+  }
+ .row{
+   height: 0;
+   padding: 0;
+ }
+ div{
+   padding: 0;
+ }
+ .picture-top{
+   margin-bottom: 3%;
+ }
+>>>>>>> 33145d2e29ddf8138e895c4cea89af59e04921ab
