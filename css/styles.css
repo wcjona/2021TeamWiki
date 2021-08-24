@@ -118,13 +118,7 @@ img{
   
   /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
   div.contentBlock {
-<<<<<<< HEAD
     margin-left: var(--sidebar-width, 200px);
-    height: 5000px;
-=======
-    margin-left: 18%;
-  
->>>>>>> 33145d2e29ddf8138e895c4cea89af59e04921ab
   }
   .sticky {
     position: fixed;
@@ -209,9 +203,8 @@ svg .progress-bar {
     color: transparent;
   }
   .pct{
-<<<<<<< HEAD
     position: absolute;
-    top: 9rem;
+    top: 8rem;
     left: 2.5rem;
     color: #35EAB7 !important;
     font-family: Articulat CF;
@@ -222,15 +215,6 @@ svg .progress-bar {
     text-align: center;
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-  }
-  
-=======
-    position: fixed;
-    top: 9rem;
-    left: 7rem;
-    color: white !important;
-    text-align: center;
   }
   h1, h2{
     color: #21DEA8;
@@ -270,4 +254,3 @@ svg .progress-bar {
  .picture-top{
    margin-bottom: 3%;
  }
->>>>>>> 33145d2e29ddf8138e895c4cea89af59e04921ab
