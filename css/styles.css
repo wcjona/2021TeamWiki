@@ -1,5 +1,5 @@
 :root{
-  --sidebar-width: 200px;
+  --sidebar-width: 250px;
 }
 
 .navbar-header{
@@ -78,7 +78,7 @@ img{
     box-shadow: 0 0 15px #232323;
 }
 #projectComponent{
-    margin: 1% 10%;
+    margin: 1% 5%;
 }
 #navbar .dropdown-menu-left{
     left:auto;
@@ -93,8 +93,8 @@ img{
     width: var(--sidebar-width, 200px);
     position: absolute;
     height: 100%;
-    overflow: auto;
-
+    /* margin-left: calc(0.15 * var(--sidebar-width)); */
+    overflow: hidden;
   }
   
   /* Sidebar links */
@@ -134,16 +134,13 @@ img{
       font-size: medium;
   }
   .accordion-flush{
-    margin-left: 30px;
+    margin-left: 90px;
   }
   .sidebar-button{
     font-family: Articulat CF;
     font-size: large;
   }
-  .sidebar{
-    margin-left: calc(0.15 * var(--sidebar-width));
-    overflow: hidden;
-  }
+
   /* .accordion button:active{
     color: #35eab7;
   } */
@@ -166,16 +163,28 @@ img{
   }
    */
 
+#green-line{
+  /* margin-left: -27px; */
+  transform: scale(0.76) translateX(-40px) translateY(100px);
+}
+#purple-line{
+  /* margin-left: -25px; */
+  transform: scale(0.74) translateX(-40px);
+}
 
-  
+.container{
+  transform: translateY(-50px);
+}
+
 svg .progress-bar {
     stroke: url(#grad);
     transition: stroke-dashoffset 0 ease-in-out; 
     filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.2));
   }
   .complete{
-    width: var(--sidebar-width, 200px);
-    margin-right: -200px;
+    /* width: var(--sidebar-width, 200px); */
+    /* margin-right: -200px; */
+    width: 230px;
     height: 200px; 
     z-index: 2;
     stroke: transparent; /*background stroke color*/
@@ -183,8 +192,8 @@ svg .progress-bar {
     /* stroke-linecap: round; */
     fill: transparent;
     position: sticky;
-    margin-top: -75px;
-    transform: rotate(-90deg);
+    /* margin-top: -75px; */
+    transform: rotate(-90deg) translateX(100px) translateY(35px);
     transform-origin: center;
   }
   .inner-circle{
