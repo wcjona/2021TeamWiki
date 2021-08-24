@@ -1,3 +1,7 @@
+:root{
+  --sidebar-width: 200px;
+}
+
 .navbar-header{
     margin-left:5px;
     width:100%;
@@ -86,7 +90,7 @@ img{
 .sidebar {
     margin: 0;
     padding: 0;
-    width: 17%;
+    width: var(--sidebar-width, 200px);
     position: absolute;
     height: 100%;
     overflow: auto;
@@ -114,7 +118,7 @@ img{
   
   /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
   div.contentBlock {
-    margin-left: 18%;
+    margin-left: var(--sidebar-width, 200px);
     height: 5000px;
   }
   .sticky {
@@ -130,12 +134,15 @@ img{
       border: none;
       font-size: medium;
   }
+  .accordion-flush{
+    margin-left: 30px;
+  }
   .sidebar-button{
     font-family: Articulat CF;
     font-size: large;
   }
   .sidebar{
-    margin-left: 5%;
+    margin-left: calc(0.15 * var(--sidebar-width));
   }
   /* .accordion button:active{
     color: #35eab7;
@@ -159,21 +166,25 @@ img{
   }
    */
 
-  svg {
-    position: sticky;
-    transform: rotate(-90deg);
-  }
+
   
 svg .progress-bar {
     stroke: url(#grad);
     transition: stroke-dashoffset 0 ease-in-out; 
     filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.2));
   }
-  svg {
+  .complete{
+    width: var(--sidebar-width, 200px);
+    height: 200px; 
+    z-index: 2;
     stroke: transparent; /*background stroke color*/
     stroke-width: 10px;
     /* stroke-linecap: round; */
     fill: transparent;
+    position: sticky;
+    margin-top: -30px;
+    transform: rotate(-90deg);
+    transform-origin: center;
   }
   .inner-circle{
     stroke: #35eab7; /*background stroke color*/
@@ -193,9 +204,10 @@ svg .progress-bar {
     color: transparent;
   }
   .pct{
-    position: fixed;
-    top: 10.5rem;
-    left: 7.6rem;
+    position: absolute;
+    top: 9%;
+    left: 25%;
     color: white !important;
     text-align: center;
   }
+  
