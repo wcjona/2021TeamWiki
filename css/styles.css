@@ -126,7 +126,6 @@ img{
     /* display: hidden; */
     top: 0;
     padding-top: 125px;
-    overflow: hidden;
   }
 
   .accordion-item, .sidebar-button{
@@ -144,6 +143,7 @@ img{
   }
   .sidebar{
     margin-left: calc(0.15 * var(--sidebar-width));
+    overflow: hidden;
   }
   /* .accordion button:active{
     color: #35eab7;
