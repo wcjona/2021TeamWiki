@@ -164,16 +164,15 @@ img{
    */
 
 #green-line{
-  /* margin-left: -27px; */
   transform: scale(0.76) translateX(-40px) translateY(100px);
 }
 #purple-line{
-  /* margin-left: -25px; */
-  transform: scale(0.74) translateX(-40px);
+  transform: scale(0.74) translateX(-40px) translateY(70px);
 }
 
 .container{
   transform: translateY(-50px);
+  margin-bottom: -130px;
 }
 
 svg .progress-bar {
@@ -182,8 +181,6 @@ svg .progress-bar {
     filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.2));
   }
   .complete{
-    /* width: var(--sidebar-width, 200px); */
-    /* margin-right: -200px; */
     width: 230px;
     height: 200px; 
     z-index: 2;
@@ -213,8 +210,8 @@ svg .progress-bar {
   }
   .pct{
     position: absolute;
-    top: 8rem;
-    left: 2.5rem;
+    top: 4.5rem;
+    left: 5.5rem;
     color: #35EAB7 !important;
     font-family: Articulat CF;
     font-style: normal;
