@@ -1,0 +1,298 @@
+:root{
+  --sidebar-width: 250px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar-header{
+    margin-left:5px;
+    width:100%;
+}
+.logo{
+    margin-left: 10%;
+}
+body{
+
+    background: #353535;
+}
+.navbar{
+    margin-top: 16px;
+    background-color: #191919;
+}
+.btn{
+    margin: 10px; 
+    width: 25%; 
+    line-height: 150px;
+}
+.row {
+    margin-top: 5%;
+    height: 200px;
+}
+img{
+    width: 100%;
+}
+
+.banner{
+  margin-top: 50px;
+}
+#banner-shadow{
+  margin-top: -31px;
+}
+
+.nav-link {
+    color: white!important;
+    font-family: Articulat CF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 90%;
+    line-height: 27px;
+    text-transform: capitalize;
+    }
+.dropdown .dropdown-menu{
+    background-color: #363636;
+    outline: black;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+}
+.dropdown .dropdown-menu a{
+    color: white;
+}
+.dropdown .dropdown-menu a:hover
+{
+  color: #35eab7;
+  background-color: #555;
+  outline: black;
+}
+
+.dropdown-toggle::after {
+    color: #35EAB7;
+}
+.underBanner{
+    width: 100%;
+    margin: 0;
+}
+.nav-item{
+    margin-right: 1%;
+}
+.navbar-nav {
+    padding-right: 5%;
+}
+.contentBlock{
+    background-color: #444444;
+    padding: 10%;
+    box-shadow: 0 0 15px #232323;
+}
+#projectComponent{
+    margin: 1% 5%;
+}
+#navbar .dropdown-menu-left{
+    left:auto;
+    right:0;
+    margin-right:-10px;
+}
+
+.notebook-selector{
+  text-align: center;
+  margin: 5%;
+}
+.notebook-selector > .toggle{
+  transform: translateX(-50px);
+}
+.notebook-selector > .notebook-selector-title{
+  margin-bottom: 5%;
+  font-family: Articulat CF;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+
+  color: #FFFFFF;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.week{
+  font-family: Articulat CF;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+
+  color: #875FF4;
+}
+.weekP{
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+
+  color: #282828;
+}
+
+.hLine{
+  border: 1px solid #353535;
+  background-color: #353535;
+  margin-top: 3%;
+  width: 106.1%;
+  transform: translateX(-2.85%) rotate(180deg);
+}
+.custom-accordion {
+  background: #1DC394;
+  color: #FFFFFF;
+  font-family: 'Sunflower', sans-serif;
+  padding-bottom: 2rem;
+}
+.custom-accordion > .item {
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  max-width: 30rem;
+}
+
+.custom-accordion > .item > .icon {
+  color: #462521;
+  font-size: 2rem;
+}
+.custom-accordion > .item > .title {
+  font-size: 1.5rem;
+}
+.custom-accordion > .item > content {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 800px) and (min-height: 270px) {
+  .custom-accordion {
+    display: table;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+    max-height: 1000px;
+    overflow: hidden;
+    padding-bottom: 0;
+  }
+  .custom-accordion > .item {
+    display: table-cell;
+    /* float: left; */
+    position: relative;
+    width: 1%;
+    height: 100%;
+    padding: 2rem 1rem;
+    text-align: center;
+    transform-origin: 0 50%;
+    transition: all 0.3s cubic-bezier(0.8, 0.16, 0.42, 0.89);
+  }
+  .custom-accordion > .item:focus {
+    /* transform: scaleX(2) translateX(-1px); */
+    /* position: fixed; */
+    width: 70%;
+    box-shadow: 0 0 1rem #301916;
+    background: #353535;
+    border-color: transparent;
+  }
+  /* .custom-accordion > .item:focus + .item {
+    opacity: 0.1;
+  } */
+  .custom-accordion > .item {
+    border-right: 1px solid #462521;
+    
+  }
+  .custom-accordion > .item:focus > .icon {
+    transform: scaleX(1);
+  }
+  .custom-accordion > .item:focus > .title {
+    
+    transform: scaleX(.5) translateX(-50%);
+    background: #CA2E55;
+    text-align: center;
+    padding: 0;
+  }
+  .custom-accordion > .item:focus > .title > .text {
+    transform: translateX(-50%) scaleX(2);
+    left: 50%;
+  }
+  .custom-accordion > .item:focus > .content {
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 5%;
+    /* padding-right: ; */
+  }
+  .custom-accordion > .item:focus > .content > .text{
+    /* width: 50%; */
+    /* transform: scalex(2) translateX(25%); */
+  }
+
+  .custom-accordion > .item:focus > .month {
+    transform: rotate(0deg);
+    transition: all 0.3s cubic-bezier(0.8, 0.16, 0.42, 0.89);
+  }
+  .custom-accordion > .item:focus > .month > .month-header{
+    transition: all 0.3s cubic-bezier(0.8, 0.16, 0.42, 0.89);
+  }
+  .custom-accordion > .item > .month{
+    position: absolute; 
+    /* margin-left: 10%; */
+    width: 100%;   
+    right: 0;
+    /* text-align: left; */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: rotate(90deg);
+    transition: all 0.3s cubic-bezier(0.8, 0.16, 0.42, 0.89);
+  }
+  .custom-accordion > .item > .month > .month-header{
+    font-family: Articulat CF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  .custom-accordion > .item > .icon {
+    font-weight: 700;
+    font-size: 2rem;
+    transition: all 0.3s cubic-bezier(0.8, 0.16, 0.42, 0.89);
+    color: black;
+  }
+  .custom-accordion > .item > .title {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 1.5rem;
+    width: 200%;
+    text-align: left;
+    transform-origin: 0 50%;
+    transform: rotate(-90deg);
+    transition: all 0.3s cubic-bezier(0.8, 0.16, 0.42, 0.89);
+    font-size: 1.2rem;
+  }
+  .custom-accordion > .item > .title > .text {
+    color: black;
+    position: absolute;
+    left: 2rem;
+    bottom: 0;
+    white-space: nowrap;
+    transition: all 0.3s cubic-bezier(0.8, 0.16, 0.42, 0.89);
+  }
+  .custom-accordion > .item > .content {
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    color: black;
+    background-color: #FFFFFF;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all 0.3s cubic-bezier(0.8, 0.16, 0.42, 0.89);
+    opacity: 0;
+    padding: 1rem;
+    pointer-events: none;
+  }
+}
+
+
+
