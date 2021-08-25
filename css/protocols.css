@@ -175,12 +175,41 @@ img{
   
 }
 .accordion_container p{
-	margin:20px;
+	
+}
+.accordion-content{
+  margin:20px;
   font-family: Avenir;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
+  color: #353535;
+  padding: 5%;
+  padding-top: 2%;
+}
+.accordion-header{
+  font-family: Articulat CF;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: left;
+  /* Light Theme/Header */
+
+  color: #884EFA;
+}
+.accordion-p{
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+
+
+  /* Light Theme/Body Text */
+
   color: #353535;
 }
 .ac_hide{
@@ -188,7 +217,7 @@ img{
 	position: absolute;
 }
 .ac_hide:checked + .accordion_container{
-	height: 500px;
+	height: 800px;
 }
 
 /* The side navigation menu */
