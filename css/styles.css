@@ -31,7 +31,10 @@ img{
 }
 
 .banner{
-    margin-top: 16px;
+  margin-top: 50px;
+}
+#banner-shadow{
+  margin-top: -31px;
 }
 
 .nav-link {
