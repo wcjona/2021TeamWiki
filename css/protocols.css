@@ -234,6 +234,17 @@ img{
   }
   
   /* Sidebar links */
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: var(--sidebar-width, 200px);
+    position: absolute;
+    height: 100%;
+    /* margin-left: calc(0.15 * var(--sidebar-width)); */
+    overflow: hidden;
+  }
+  
+  /* Sidebar links */
   .sidebar a {
     display: block;
     color: white;
@@ -270,7 +281,8 @@ img{
       font-size: medium;
   }
   .accordion-flush{
-    margin-left: 90px;
+    margin-top: -80px;
+    margin-left: 70px;
   }
   .sidebar-button{
     font-family: Articulat CF;
@@ -309,6 +321,7 @@ img{
 .container{
   transform: translateY(-50px);
   margin-bottom: -130px;
+  z-index: -1;
 }
 
 svg .progress-bar {
