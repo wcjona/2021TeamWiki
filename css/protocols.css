@@ -40,8 +40,8 @@ img{
 }
 
 .banner{
-  margin-top: 120px;
-  margin-bottom: -50px;
+  margin-top: 50px;
+  /* margin-bottom: -50px; */
 }
 #banner-shadow{
   margin-top: -180px;
@@ -137,6 +137,7 @@ img{
   height: 150px;
   padding: 10px;
 } */
+
 .horizontal-accordion{
 	/* max-width: 900px; */
 	/* padding: 50px; */
@@ -174,6 +175,7 @@ img{
 	background: rgba(255, 255, 255, 0.85);
   
 }
+
 .accordion_container p{
 	
 }
