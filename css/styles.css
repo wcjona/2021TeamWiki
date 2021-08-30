@@ -137,6 +137,7 @@ img{
       font-size: medium;
   }
   .accordion-flush{
+    margin-top: -80px;
     margin-left: 70px;
   }
   .sidebar-button{
