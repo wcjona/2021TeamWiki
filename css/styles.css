@@ -244,10 +244,10 @@ svg .progress-bar {
   }
   h2{
     font-size: larger;
-    margin-top: 3%;
+    margin-top: 7%;
   }
   p{
-    margin-top: 5%;
+    margin-top: 2%;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-size: 0.9rem;
@@ -267,4 +267,10 @@ svg .progress-bar {
  }
  .sidebar{
    z-index: 1;
+ }
+ .firstSubheader{
+   margin-top: 3% !important;
+ }
+ .top-svg{
+   margin-bottom: 5%;
  }
