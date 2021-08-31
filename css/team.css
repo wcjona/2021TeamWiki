@@ -17,7 +17,7 @@
       margin-top: 16px;
       background-color: #191919;
   }
-  .btn{
+  /* .btn{
       margin: 10px; 
       width: 25%; 
       line-height: 150px;
@@ -25,7 +25,7 @@
   .row {
       margin-top: 5%;
       height: 200px;
-  }
+  } */
   img{
       width: 100%;
   }
@@ -253,13 +253,13 @@
     i{
       box-shadow: 0 0 5px #232323;
     }
-   .row{
+   /* .row{
      height: 0;
      padding: 0;
    }
    div{
      padding: 0;
-   }
+   } */
    .picture-top{
      margin-bottom: 3%;
    }
