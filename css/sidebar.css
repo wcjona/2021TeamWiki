@@ -34,7 +34,7 @@
       font-size: medium;
   }
   .accordion-flush{
-    margin-top: -80px;
+    margin-top: -180px;
     margin-left: 70px;
   }
   .sidebar-button{
@@ -46,7 +46,7 @@
     transition: stroke-dashoffset 0 ease-in-out; 
     filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.2));
   }
-  .complete{
+  .progress-bar-svg{
     width: 230px;
     height: 200px; 
     z-index: 2;
@@ -54,10 +54,14 @@
     stroke-width: 10px;
     /* stroke-linecap: round; */
     fill: transparent;
-    position: sticky;
-    /* margin-top: -75px; */
-    transform: rotate(-90deg) translateX(100px) translateY(35px);
+    /* position: sticky; */
+    /* margin-top: -100px; */
+    transform: rotate(-90deg) translateX(203.8px) translateY(37px) scaleY(1.035) scaleX(1.0);
     transform-origin: center;
+  }
+  .pgb-base{
+    margin-left: -20px;
+    margin-top: 20px;
   }
   .inner-circle{
     stroke: #21dda7; /*background stroke color*/

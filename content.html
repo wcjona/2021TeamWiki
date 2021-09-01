@@ -109,7 +109,7 @@
     <div class="sidebar" id="sidebar">
       <div class="container">
         <p id="pct">Insert Page <br> Title</p>
-        <svg width="120" height="57" viewBox="0 0 120 57" fill="none" id="green-line">
+        <!-- <svg width="120" height="57" viewBox="0 0 120 57" fill="none" id="green-line">
           <g filter="url(#filter0_d)">
           <path d="M-14 33.541L0.441969 33.5408L10.6207 21.7414L46.8719 21.7454L54.8438 34.9134L100 34.9134" stroke="#21DEA8" stroke-width="3"/>
           </g>
@@ -129,7 +129,7 @@
         <svg width="105" height="22" viewBox="0 0 105 22" fill="none" id="purple-line">
           <path d="M-31 1.34375H19.1193L34.789 21.3438H70.8807L79.8716 11.3438H105" stroke="#9158FD"/>
         </svg>
-        <svg class="complete">
+        <svg class="progress-bar-svg">
           <defs>
             <linearGradient id="grad">
             <stop offset="0%" stop-color="#1EC8F14D"></stop>
@@ -145,9 +145,18 @@
           <circle class="inner-circles" cx="40%" cy="40%" r="30%"></circle> 
           <circle class="inner-circle" cx="40%" cy="40%" r="32%"></circle> 
           <circle class="progress-bar" cx="40%" cy="40%" r="35%"></circle>
+        </svg> -->
+        <img src="images/pct.svg" class="pgb-base">
+        <svg class="progress-bar-svg">
+          <defs>
+            <linearGradient id="grad">
+            <stop offset="0%" stop-color="#1EC8F14D"></stop>
+            <stop offset="100%" stop-color="#21DDA74D"></stop>
+            </linearGradient>
+          </defs>
+          <circle class="progress-bar" cx="40%" cy="40%" r="35%"></circle>
         </svg>
-      
-
+        
         <div class="accordion accordion-flush" id="accordionFlushExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-heading1">
@@ -187,6 +196,7 @@
             </div>
           </div>
         </div>
+        
       </div>
     </div>
     <!-- CONTENT -->
@@ -337,9 +347,9 @@
       
       const percentage = scrollTop / (scrollHeight - clientHeight);
       if(percentage === 1) {
-          container.classList.add('completed');
+          container.classList.add('progress-bar-svgd');
       } else {
-          container.classList.remove('completed');
+          container.classList.remove('progress-bar-svgd');
       }
       progressBar.style.strokeDashoffset = totalLength - totalLength * percentage;  
       }
