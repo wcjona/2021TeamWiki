@@ -27,13 +27,13 @@
     top: 0;
     padding-top: 125px;
   }
-  .accordion-item, .sidebar-button{
+  #sidebar .accordion-item, #sidebar .sidebar-button{
     background-color: transparent; 
       color: white;
       border: none;
       font-size: medium;
   }
-  .accordion-flush{
+  #sidebar .accordion-flush{
     margin-top: -180px;
     margin-left: 70px;
   }

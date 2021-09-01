@@ -110,53 +110,25 @@
     <div class="sidebar" id="sidebar">
       <div class="container">
         <p id="pct">Insert Page <br> Title</p>
-        <svg width="120" height="57" viewBox="0 0 120 57" fill="none" id="green-line">
-          <g filter="url(#filter0_d)">
-          <path d="M-14 33.541L0.441969 33.5408L10.6207 21.7414L46.8719 21.7454L54.8438 34.9134L100 34.9134" stroke="#21DEA8" stroke-width="3"/>
-          </g>
-          <defs>
-          <filter id="filter0_d" x="-34.0005" y="0.241333" width="154.001" height="56.1721" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-          <feOffset/>
-          <feGaussianBlur stdDeviation="10"/>
-          <feComposite in2="hardAlpha" operator="out"/>
-          <feColorMatrix type="matrix" values="0 0 0 0 0.129412 0 0 0 0 0.870588 0 0 0 0 0.658824 0 0 0 1 0"/>
-          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-          </filter>
-          </defs>
-        </svg>
-        <svg width="105" height="22" viewBox="0 0 105 22" fill="none" id="purple-line">
-          <path d="M-31 1.34375H19.1193L34.789 21.3438H70.8807L79.8716 11.3438H105" stroke="#9158FD"/>
-        </svg>
-        <svg class="complete">
+        <img src="images/pct.svg" class="pgb-base">
+        <svg class="progress-bar-svg">
           <defs>
             <linearGradient id="grad">
             <stop offset="0%" stop-color="#1EC8F14D"></stop>
             <stop offset="100%" stop-color="#21DDA74D"></stop>
             </linearGradient>
           </defs>
-          <defs>
-            <linearGradient id="grad1">
-            <stop offset="0%" stop-color="#9158FD"></stop>
-            <stop offset="100%" stop-color="#FF"></stop>
-          </linearGradient>
-          </defs>
-          <circle class="inner-circles" cx="40%" cy="40%" r="30%"></circle> 
-          <circle class="inner-circle" cx="40%" cy="40%" r="32%"></circle> 
           <circle class="progress-bar" cx="40%" cy="40%" r="35%"></circle>
         </svg>
-      
-
-        <div class="accordion accordion-flush" id="accordionFlushExample">
+        
+        <div class="accordion accordion-flush" id="accordionSidebar">
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-heading1">
               <button  id="sidebar-button1" class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
                 <i id="icon" class="fa fa-chevron-down"  aria-hidden="true"></i> Header 1 
               </button>
             </h2>
-            <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1" data-bs-parent="#accordionFlushExample">
+            <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1" data-bs-parent="#accordionSidebar">
               <div class="accordion-body">
                 <a class="sidebar-subheader" href="#subheader1">Subheader 1</a>
               </div>
@@ -168,7 +140,7 @@
                 <i class="animate-icon fas fa-chevron-down"></i> Header 2
               </button>
             </h2>
-            <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2" data-bs-parent="#accordionFlushExample">
+            <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2" data-bs-parent="#accordionSidebar">
               <div class="accordion-body">
                 <a class="sidebar-subheader" href="#subheader2">Subheader 1</a>
                 <a class="sidebar-subheader" href="#subheader3">Subheader 2</a>
@@ -181,18 +153,227 @@
                 <i class="animate-icon fas fa-chevron-down"></i> Header 3
               </button>
             </h2>
-            <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3" data-bs-parent="#accordionFlushExample">
+            <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3" data-bs-parent="#accordionSidebar">
               <div class="accordion-body">
                 <a class="sidebar-subheader" href="#subheader4">Subheader 1</a>
               </div>
             </div>
           </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-heading4">
+              <button  id="sidebar-button4" class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+                <i class="animate-icon fas fa-chevron-down"></i> Header 4
+              </button>
+            </h2>
+            <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4" data-bs-parent="#accordionSidebar">
+              <div class="accordion-body">
+                <a class="sidebar-subheader" href="#subheader5">Subheader 1</a>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-heading5">
+              <button  id="sidebar-button5" class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+                <i class="animate-icon fas fa-chevron-down"></i> Header 5
+              </button>
+            </h2>
+            <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5" data-bs-parent="#accordionSidebar">
+              <div class="accordion-body">
+                <a class="sidebar-subheader" href="#subheader6">Subheader 1</a>
+              </div>
+            </div>
+          </div>
         </div>
+        
       </div>
     </div>
     <!-- CONTENT -->
     <section id="projectComponent">
-      <div class="horizontal-accordion">
+      <div class="accordion accordion-flush" id="accordionContent">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-heading1">
+            <button  id="sidebar-button1" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+              General Protocols
+            </button>
+          </h2>
+          <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1" data-bs-parent="#accordionContent">
+            <div class="accordion-body">
+              <h1>POLYMERASE CHAIN REACTION (PCR)</h1>
+              <p>1. Combine in a 0.2ml microcentrifuge tube:<br>
+                &emsp;5μl of NEB 10X standard Taq buffer (final concentration = 1X)<br>
+                &emsp;0.25μl of NEB Taq (final concentration = 1.25U/50μl<br>
+                &emsp;1μl of 10μM forward primer (final concentration = 0.2μM)<br>
+                &emsp;1μl of 10μM reverse primer (final concentration = 0.2μM)<br>
+                &emsp;1pg to 1ng of template plasmid DNA (final concentration < 1000ng/μl)<br>
+                &emsp;1μl of 10mM Kapa dNTPs (final concentration = 200μM) <br>
+                &emsp;ddH2O to 50μl<br>
+                <br>
+                 2. Vortex 2 to 3 seconds to mix, then centrifuge briefly to settle<br><br>
+                 3. Place in thermocycler and select or set up the appropriate program as follows:<br>
+                 &emsp;Initial denaturation -> 95°C for 30 seconds<br>
+                 &emsp;Repeat 25 to 30x:<br>
+                 &emsp;Denaturation -> 95°C for 15 to 30 seconds<br>
+                 &emsp;Annealing -> Tm - 5°C (45 to 68°C) for 15 to 60 seconds<br>
+                 &emsp;Extension -> 68°C for 1 minute per kilobase<br>
+                &emsp;Final extension -> 68°C for 5 minutes<br>
+                &emsp;Hold at 4°C
+                </p>
+                <h1>Protein purification</h1>
+                <p>As one of the fastest growing solid-waste streams, electronic waste (e-waste) represents a massively untapped reservoir of REEs. Our solution aims to harness the tools of synthetic biology in order to develop a holistic and innovative system of recovering REEs from e-waste. Using bioleaching, a microbial method of metal extraction that is more cost-effective and environmentally friendly than conventional metallurgy, we plan to extract a lanthanide-rich leachate from the e-waste feedstock. The REEs will be isolated by engineering E. coli to express and secrete the recently discovered lanthanide-binding protein, lanmodulin. With an affinity for REEs that is 6-fold greater than that for non-REEs, the use of lanmodulin will enable the development of a highly selective method of REE. </p>
+                <h1>METAL SEPARATION</h1>
+                <p>As one of the fastest growing solid-waste streams, electronic waste (e-waste) represents a massively untapped reservoir of REEs. Our solution aims to harness the tools of synthetic biology in order to develop a holistic and innovative system of recovering REEs from e-waste. Using bioleaching, a microbial method of metal extraction that is more cost-effective and environmentally friendly than conventional metallurgy, we plan to extract a lanthanide-rich leachate from the e-waste feedstock. The REEs will be isolated by engineering E. coli to express and secrete the recently discovered lanthanide-binding protein, lanmodulin. With an affinity for REEs that is 6-fold greater than that for non-REEs, the use of lanmodulin will enable the development of a highly selective method of REE isolation. Furthermore, the protein-based nature of this method makes it more sustainable and environmentally-friendly than traditional chemical processes, which are commonly non-reusable, toxic, and energy-intensive. As current metal measurement protocols.</p>
+              </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-heading2">
+            <button  id="sidebar-button2" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+              bioleaching
+            </button>
+          </h2>
+          <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2" data-bs-parent="#accordionContent">
+            <div class="accordion-body">
+              <h1>POLYMERASE CHAIN REACTION (PCR)</h1>
+              <p>1. Combine in a 0.2ml microcentrifuge tube:<br>
+                &emsp;5μl of NEB 10X standard Taq buffer (final concentration = 1X)<br>
+                &emsp;0.25μl of NEB Taq (final concentration = 1.25U/50μl<br>
+                &emsp;1μl of 10μM forward primer (final concentration = 0.2μM)<br>
+                &emsp;1μl of 10μM reverse primer (final concentration = 0.2μM)<br>
+                &emsp;1pg to 1ng of template plasmid DNA (final concentration < 1000ng/μl)<br>
+                &emsp;1μl of 10mM Kapa dNTPs (final concentration = 200μM) <br>
+                &emsp;ddH2O to 50μl<br>
+                <br>
+                 2. Vortex 2 to 3 seconds to mix, then centrifuge briefly to settle<br><br>
+                 3. Place in thermocycler and select or set up the appropriate program as follows:<br>
+                 &emsp;Initial denaturation -> 95°C for 30 seconds<br>
+                 &emsp;Repeat 25 to 30x:<br>
+                 &emsp;Denaturation -> 95°C for 15 to 30 seconds<br>
+                 &emsp;Annealing -> Tm - 5°C (45 to 68°C) for 15 to 60 seconds<br>
+                 &emsp;Extension -> 68°C for 1 minute per kilobase<br>
+                &emsp;Final extension -> 68°C for 5 minutes<br>
+                &emsp;Hold at 4°C
+                </p>
+                <h1>Protein purification</h1>
+                <p>As one of the fastest growing solid-waste streams, electronic waste (e-waste) represents a massively untapped reservoir of REEs. Our solution aims to harness the tools of synthetic biology in order to develop a holistic and innovative system of recovering REEs from e-waste. Using bioleaching, a microbial method of metal extraction that is more cost-effective and environmentally friendly than conventional metallurgy, we plan to extract a lanthanide-rich leachate from the e-waste feedstock. The REEs will be isolated by engineering E. coli to express and secrete the recently discovered lanthanide-binding protein, lanmodulin. With an affinity for REEs that is 6-fold greater than that for non-REEs, the use of lanmodulin will enable the development of a highly selective method of REE. </p>
+                <h1>METAL SEPARATION</h1>
+                <p>As one of the fastest growing solid-waste streams, electronic waste (e-waste) represents a massively untapped reservoir of REEs. Our solution aims to harness the tools of synthetic biology in order to develop a holistic and innovative system of recovering REEs from e-waste. Using bioleaching, a microbial method of metal extraction that is more cost-effective and environmentally friendly than conventional metallurgy, we plan to extract a lanthanide-rich leachate from the e-waste feedstock. The REEs will be isolated by engineering E. coli to express and secrete the recently discovered lanthanide-binding protein, lanmodulin. With an affinity for REEs that is 6-fold greater than that for non-REEs, the use of lanmodulin will enable the development of a highly selective method of REE isolation. Furthermore, the protein-based nature of this method makes it more sustainable and environmentally-friendly than traditional chemical processes, which are commonly non-reusable, toxic, and energy-intensive. As current metal measurement protocols.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-heading3">
+            <button  id="sidebar-button3" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+              Separation
+            </button>
+          </h2>
+          <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3" data-bs-parent="#accordionContent">
+            <div class="accordion-body">
+              <h1>POLYMERASE CHAIN REACTION (PCR)</h1>
+              <p>1. Combine in a 0.2ml microcentrifuge tube:<br>
+                &emsp;5μl of NEB 10X standard Taq buffer (final concentration = 1X)<br>
+                &emsp;0.25μl of NEB Taq (final concentration = 1.25U/50μl<br>
+                &emsp;1μl of 10μM forward primer (final concentration = 0.2μM)<br>
+                &emsp;1μl of 10μM reverse primer (final concentration = 0.2μM)<br>
+                &emsp;1pg to 1ng of template plasmid DNA (final concentration < 1000ng/μl)<br>
+                &emsp;1μl of 10mM Kapa dNTPs (final concentration = 200μM) <br>
+                &emsp;ddH2O to 50μl<br>
+                <br>
+                 2. Vortex 2 to 3 seconds to mix, then centrifuge briefly to settle<br><br>
+                 3. Place in thermocycler and select or set up the appropriate program as follows:<br>
+                 &emsp;Initial denaturation -> 95°C for 30 seconds<br>
+                 &emsp;Repeat 25 to 30x:<br>
+                 &emsp;Denaturation -> 95°C for 15 to 30 seconds<br>
+                 &emsp;Annealing -> Tm - 5°C (45 to 68°C) for 15 to 60 seconds<br>
+                 &emsp;Extension -> 68°C for 1 minute per kilobase<br>
+                &emsp;Final extension -> 68°C for 5 minutes<br>
+                &emsp;Hold at 4°C
+                </p>
+                <h1>Protein purification</h1>
+                <p>As one of the fastest growing solid-waste streams, electronic waste (e-waste) represents a massively untapped reservoir of REEs. Our solution aims to harness the tools of synthetic biology in order to develop a holistic and innovative system of recovering REEs from e-waste. Using bioleaching, a microbial method of metal extraction that is more cost-effective and environmentally friendly than conventional metallurgy, we plan to extract a lanthanide-rich leachate from the e-waste feedstock. The REEs will be isolated by engineering E. coli to express and secrete the recently discovered lanthanide-binding protein, lanmodulin. With an affinity for REEs that is 6-fold greater than that for non-REEs, the use of lanmodulin will enable the development of a highly selective method of REE. </p>
+                <h1>METAL SEPARATION</h1>
+                <p>As one of the fastest growing solid-waste streams, electronic waste (e-waste) represents a massively untapped reservoir of REEs. Our solution aims to harness the tools of synthetic biology in order to develop a holistic and innovative system of recovering REEs from e-waste. Using bioleaching, a microbial method of metal extraction that is more cost-effective and environmentally friendly than conventional metallurgy, we plan to extract a lanthanide-rich leachate from the e-waste feedstock. The REEs will be isolated by engineering E. coli to express and secrete the recently discovered lanthanide-binding protein, lanmodulin. With an affinity for REEs that is 6-fold greater than that for non-REEs, the use of lanmodulin will enable the development of a highly selective method of REE isolation. Furthermore, the protein-based nature of this method makes it more sustainable and environmentally-friendly than traditional chemical processes, which are commonly non-reusable, toxic, and energy-intensive. As current metal measurement protocols.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-heading4">
+            <button  id="sidebar-button4" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+              measurement
+            </button>
+          </h2>
+          <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4" data-bs-parent="#accordionContent">
+            <div class="accordion-body">
+              <h1>POLYMERASE CHAIN REACTION (PCR)</h1>
+              <p>1. Combine in a 0.2ml microcentrifuge tube:<br>
+                &emsp;5μl of NEB 10X standard Taq buffer (final concentration = 1X)<br>
+                &emsp;0.25μl of NEB Taq (final concentration = 1.25U/50μl<br>
+                &emsp;1μl of 10μM forward primer (final concentration = 0.2μM)<br>
+                &emsp;1μl of 10μM reverse primer (final concentration = 0.2μM)<br>
+                &emsp;1pg to 1ng of template plasmid DNA (final concentration < 1000ng/μl)<br>
+                &emsp;1μl of 10mM Kapa dNTPs (final concentration = 200μM) <br>
+                &emsp;ddH2O to 50μl<br>
+                <br>
+                 2. Vortex 2 to 3 seconds to mix, then centrifuge briefly to settle<br><br>
+                 3. Place in thermocycler and select or set up the appropriate program as follows:<br>
+                 &emsp;Initial denaturation -> 95°C for 30 seconds<br>
+                 &emsp;Repeat 25 to 30x:<br>
+                 &emsp;Denaturation -> 95°C for 15 to 30 seconds<br>
+                 &emsp;Annealing -> Tm - 5°C (45 to 68°C) for 15 to 60 seconds<br>
+                 &emsp;Extension -> 68°C for 1 minute per kilobase<br>
+                &emsp;Final extension -> 68°C for 5 minutes<br>
+                &emsp;Hold at 4°C
+                </p>
+                <h1>Protein purification</h1>
+                <p>As one of the fastest growing solid-waste streams, electronic waste (e-waste) represents a massively untapped reservoir of REEs. Our solution aims to harness the tools of synthetic biology in order to develop a holistic and innovative system of recovering REEs from e-waste. Using bioleaching, a microbial method of metal extraction that is more cost-effective and environmentally friendly than conventional metallurgy, we plan to extract a lanthanide-rich leachate from the e-waste feedstock. The REEs will be isolated by engineering E. coli to express and secrete the recently discovered lanthanide-binding protein, lanmodulin. With an affinity for REEs that is 6-fold greater than that for non-REEs, the use of lanmodulin will enable the development of a highly selective method of REE. </p>
+                <h1>METAL SEPARATION</h1>
+                <p>As one of the fastest growing solid-waste streams, electronic waste (e-waste) represents a massively untapped reservoir of REEs. Our solution aims to harness the tools of synthetic biology in order to develop a holistic and innovative system of recovering REEs from e-waste. Using bioleaching, a microbial method of metal extraction that is more cost-effective and environmentally friendly than conventional metallurgy, we plan to extract a lanthanide-rich leachate from the e-waste feedstock. The REEs will be isolated by engineering E. coli to express and secrete the recently discovered lanthanide-binding protein, lanmodulin. With an affinity for REEs that is 6-fold greater than that for non-REEs, the use of lanmodulin will enable the development of a highly selective method of REE isolation. Furthermore, the protein-based nature of this method makes it more sustainable and environmentally-friendly than traditional chemical processes, which are commonly non-reusable, toxic, and energy-intensive. As current metal measurement protocols.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-heading5">
+            <button  id="sidebar-button5" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+              bioreactor
+            </button>
+          </h2>
+          <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5" data-bs-parent="#accordionContent">
+            <div class="accordion-body">
+              <h1>POLYMERASE CHAIN REACTION (PCR)</h1>
+              <p>1. Combine in a 0.2ml microcentrifuge tube:<br>
+                &emsp;5μl of NEB 10X standard Taq buffer (final concentration = 1X)<br>
+                &emsp;0.25μl of NEB Taq (final concentration = 1.25U/50μl<br>
+                &emsp;1μl of 10μM forward primer (final concentration = 0.2μM)<br>
+                &emsp;1μl of 10μM reverse primer (final concentration = 0.2μM)<br>
+                &emsp;1pg to 1ng of template plasmid DNA (final concentration < 1000ng/μl)<br>
+                &emsp;1μl of 10mM Kapa dNTPs (final concentration = 200μM) <br>
+                &emsp;ddH2O to 50μl<br>
+                <br>
+                 2. Vortex 2 to 3 seconds to mix, then centrifuge briefly to settle<br><br>
+                 3. Place in thermocycler and select or set up the appropriate program as follows:<br>
+                 &emsp;Initial denaturation -> 95°C for 30 seconds<br>
+                 &emsp;Repeat 25 to 30x:<br>
+                 &emsp;Denaturation -> 95°C for 15 to 30 seconds<br>
+                 &emsp;Annealing -> Tm - 5°C (45 to 68°C) for 15 to 60 seconds<br>
+                 &emsp;Extension -> 68°C for 1 minute per kilobase<br>
+                &emsp;Final extension -> 68°C for 5 minutes<br>
+                &emsp;Hold at 4°C
+                </p>
+                <h1>Protein purification</h1>
+                <p>As one of the fastest growing solid-waste streams, electronic waste (e-waste) represents a massively untapped reservoir of REEs. Our solution aims to harness the tools of synthetic biology in order to develop a holistic and innovative system of recovering REEs from e-waste. Using bioleaching, a microbial method of metal extraction that is more cost-effective and environmentally friendly than conventional metallurgy, we plan to extract a lanthanide-rich leachate from the e-waste feedstock. The REEs will be isolated by engineering E. coli to express and secrete the recently discovered lanthanide-binding protein, lanmodulin. With an affinity for REEs that is 6-fold greater than that for non-REEs, the use of lanmodulin will enable the development of a highly selective method of REE. </p>
+                <h1>METAL SEPARATION</h1>
+                <p>As one of the fastest growing solid-waste streams, electronic waste (e-waste) represents a massively untapped reservoir of REEs. Our solution aims to harness the tools of synthetic biology in order to develop a holistic and innovative system of recovering REEs from e-waste. Using bioleaching, a microbial method of metal extraction that is more cost-effective and environmentally friendly than conventional metallurgy, we plan to extract a lanthanide-rich leachate from the e-waste feedstock. The REEs will be isolated by engineering E. coli to express and secrete the recently discovered lanthanide-binding protein, lanmodulin. With an affinity for REEs that is 6-fold greater than that for non-REEs, the use of lanmodulin will enable the development of a highly selective method of REE isolation. Furthermore, the protein-based nature of this method makes it more sustainable and environmentally-friendly than traditional chemical processes, which are commonly non-reusable, toxic, and energy-intensive. As current metal measurement protocols.</p>
+            </div>
+          </div>
+        </div>
+        
+
+
+
+
+
+      </div>
+
+      <!-- <div class="horizontal-accordion">
         <label class="accordion_trigger" for="at1">
           GENERAL PROTOCOLS
         </label>
@@ -274,61 +455,7 @@
           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
-      </div>
-      <!-- <div class = accordion-horizontal>
-        <div class="contentBlock"> 
-          <div clas="content-title">General Protocols</div>
-          <div class="content">
-            <p>HHHHHHHHHHHHHHHHHHHHHh</p>
-          </div>
-        </div>
-        <div class = accordion-horizontal>
-          <div class="contentBlock"> 
-            <div clas="content-title">General Protocols</div>
-            <div class="content">
-              <p>HHHHHHHHHHHHHHHHHHHHHh</p>
-            </div>
-        </div>
-        <div class = accordion-horizontal>
-          <div class="contentBlock"> 
-            <div clas="content-title">General Protocols</div>
-            <div class="content">
-              <p>HHHHHHHHHHHHHHHHHHHHHh</p>
-            </div>
-        </div>
-        <div class = accordion-horizontal>
-          <div class="contentBlock"> 
-            <div clas="content-title">General Protocols</div>
-            <div class="content">
-              <p>HHHHHHHHHHHHHHHHHHHHHh</p>
-            </div>
-        </div>
       </div> -->
-        <!-- <h1 class="top-h1">FIRST PAGE TITLE</h1>
-          <div class="col-md-6"><img src="images/purple-heading-left.svg" alt=""></div>
-          <div class="col-md-6"></div>
-        <h2 id="subheader1">SUBHEADER</h2>
-        <p>Rare earth elements (REEs) are becoming increasingly ubiquitous in modern technology, playing essential roles in catalytic converters, X-ray and MRI scanning machines, and personal electronic devices. Of the 17 unique elements that make up this group, the majority are classified as lanthanides. Despite metal ore mining remaining the industrial standard for REE production, these metals are not naturally found in large deposits, rendering the mining process unsustainable, costly, and environmentally harmful. Although there are several alternative reservoirs of REEs, such as electronic waste (e-waste) and sewage sludge, recovery of REEs from these sources is largely unsuccessful due to a lack of extraction methods that are both economically feasible and high yield. Given that the annual demand for REEs is predicted to double by 2035, there is therefore an immediate need for a novel system of efficient and sustainable REE production.</p>
-      
-        <h2 id="subheader2">SUBHEADER</h2>
-        <p>As one of the fastest growing solid-waste streams, electronic waste (e-waste) represents a massively untapped reservoir of REEs. Our solution aims to harness the tools of synthetic biology in order to develop a holistic and innovative system of recovering REEs from e-waste. Using bioleaching, a microbial method of metal extraction that is more cost-effective and environmentally friendly than conventional metallurgy, we plan to extract a lanthanide-rich leachate from the e-waste feedstock. The REEs will be isolated by engineering E. coli to express and secrete the recently discovered lanthanide-binding protein, lanmodulin. With an affinity for REEs that is 6-fold greater than that for non-REEs, the use of lanmodulin will enable the development of a highly selective method of REE isolation. Furthermore, the protein-based nature of this method makes it more sustainable and environmentally-friendly than traditional chemical processes, which are commonly non-reusable, toxic, and energy-intensive. As current metal measurement protocols are often inaccessible and expensive, we also plan on developing a luminescence-based lanthanide ion detection system, which can be modified for use in the field. By developing innovative methods of recovering and measuring REEs from e-waste, our solution takes a circular approach to REE production and e-waste recycling, thereby establishing a sustainable, cost-effective, and environmentally responsible source of REEs.</p>
-        
-        <div class="col-md-6"></div>
-        <div class="col-md-6"><img src="images/grey-heading-right.svg" alt=""></div>
-
-        <h1>SHORT TITLE</h1>
-        <div class="col-md-6"><img src="images/purple-heading-left.svg" alt=""></div>
-        <div class="col-md-6"></div>
-        <h2 id="subheader3">A LONG & WITTY SUBHEADER</h2>
-        <p>As one of the fastest growing solid-waste streams, electronic waste (e-waste) represents a massively untapped reservoir of REEs. Our solution aims to harness the tools of synthetic biology in order to develop a holistic and innovative system of recovering REEs from e-waste. Using bioleaching, a microbial method of metal extraction that is more cost-effective and environmentally friendly than conventional metallurgy, we plan to extract a lanthanide-rich leachate from the e-waste feedstock. The REEs will be isolated by engineering E. coli to express and secrete the recently discovered lanthanide-binding protein, lanmodulin. With an affinity for REEs that is 6-fold greater than that for non-REEs, the use of lanmodulin will enable the development of a highly selective method of REE isolation. Furthermore, the protein-based nature of this method makes it more sustainable and environmentally-friendly than traditional chemical processes, which are commonly non-reusable, toxic, and energy-intensive. </p>
-        <p>As one of the fastest growing solid-waste streams, electronic waste (e-waste) represents a massively untapped reservoir of REEs. Our solution aims to harness the tools of synthetic biology in order to develop a holistic and innovative system of recovering REEs from e-waste. Using bioleaching, a microbial method of metal extraction that is more cost-effective and environmentally friendly than conventional metallurgy, we plan to extract a lanthanide-rich leachate from the e-waste feedstock. The REEs will be isolated by engineering E. coli to express and secrete the recently discovered lanthanide-binding protein, lanmodulin. With an affinity for REEs that is 6-fold greater than that for non-REEs, the use of lanmodulin will enable the development of a highly selective method of REE isolation. Furthermore, the protein-based nature of this method makes it more sustainable and environmentally-friendly than traditional chemical processes, which are commonly non-reusable, toxic, and energy-intensive. </p>
-        <p>As one of the fastest growing solid-waste streams, electronic waste (e-waste) represents a massively untapped reservoir of REEs. Our solution aims to harness the tools of synthetic biology in order to develop a holistic and innovative system of recovering REEs from e-waste. Using bioleaching, a microbial method of metal extraction that is more cost-effective and environmentally friendly than conventional metallurgy, we plan to extract a lanthanide-rich leachate from the e-waste feedstock. The REEs will be isolated by engineering E. coli to express and secrete the recently discovered lanthanide-binding protein, lanmodulin. With an affinity for REEs that is 6-fold greater.</p>
-        
-        <h1>LONGER TITLE HERE</h1>
-        <h2 id="subheader4">SUBHEADER</h2>
-        <p>As one of the fastest growing solid-waste streams, electronic waste (e-waste) represents a massively untapped reservoir of REEs. Our solution aims to harness the tools of synthetic biology in order to develop a holistic and innovative system of recovering REEs from e-waste. Using bioleaching, a microbial method of metal extraction that is more cost-effective and environmentally friendly than conventional metallurgy, we plan to extract a lanthanide-rich leachate from the e-waste feedstock. The REEs will be isolated by engineering E. coli to express and secrete the recently discovered lanthanide-binding protein, lanmodulin. With an affinity for REEs that is 6-fold greater.</p>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
-      
       
     </section>
     
