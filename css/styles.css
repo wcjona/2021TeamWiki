@@ -79,9 +79,6 @@
     text-transform: uppercase;
 
   }
-  div.contentBlock {
-    margin-left: var(--sidebar-width, 200px);
-  }
 
   .top-h1{
     margin-top:0%;
