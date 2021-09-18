@@ -109,11 +109,11 @@
     <div>
       <h2 class="notebook-selector-label">SELECT A SUBGROUP JOURNAL</h2>
       <div class="notebook-selector">
-        <select class="notebook-selector-background">
-          <option class="notebook-selector-item" value="bioleaching">Bioleaching</option>
-          <option class="notebook-selector-item" value="separation">Separation</option>
-          <option class="notebook-selector-item" value="measurement">Measurement</option>
-          <option class="notebook-selector-item" value="bioreactor">Bioreactor</option>
+        <select class="notebook-selector-background" id="nb-select" onchange="changeNotebook();">
+          <option class="notebook-selector-item" value="bioleaching" onclick="changeNotebook(event, 'bioleaching')" selected>Bioleaching</option>
+          <option class="notebook-selector-item" value="separation" onclick="changeNotebook(event, 'separation')">Separation</option>
+          <option class="notebook-selector-item" value="measurement" onclick="changeNotebook(event, 'measurement')">Measurement</option>
+          <option class="notebook-selector-item" value="bioreactor" onclick="changeNotebook(event, 'bioreactor')">Bioreactor</option>
         </select>
       </div>
         
@@ -124,17 +124,17 @@
       <div class="item" id="month1" tabindex="0">
         <div class="month"><h1 class="month-header">MAY</h1></div>
         
-        <div class="content">
-          <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolor repellendus quidem! Alias voluptatum enim eius id illum accusamus ut amet rerum delectus</div>
+        <div class="content" id="bioleaching">
+          <div class="text">bioleaching ipsum dolor sit amet, consectetur adipisicing elit. Modi dolor repellendus quidem! Alias voluptatum enim eius id illum accusamus ut amet rerum delectus</div>
         </div>
-        <div class="content">
-          <div class="text">Separation Separation Separation Separation Separation Separation onsectetur adipisicing elit. Modi dolor repellendus quidem! Alias voluptatum enim eius id illum accusamus ut amet rerum delectus</div>
+        <div class="content" id="separation">
+          <div class="text">separation ipsum dolor sit amet, consectetur adipisicing elit. Modi dolor repellendus quidem! Alias voluptatum enim eius id illum accusamus ut amet rerum delectus</div>
         </div>
-        <div class="content">
-          <div class="text"> Measurement Measurement Measurement Measurement Measurement onsectetur adipisicing elit. Modi dolor repellendus quidem! Alias voluptatum enim eius id illum accusamus ut amet rerum delectus</div>
+        <div class="content" id="measurement">
+          <div class="text">measurement ipsum dolor sit amet, consectetur adipisicing elit. Modi dolor repellendus quidem! Alias voluptatum enim eius id illum accusamus ut amet rerum delectus</div>
         </div>
-        <div class="content">
-          <div class="text">Bioreactor Bioreactor Bioreactor Bioreactor Bioreactor Bioreactor onsectetur adipisicing elit. Modi dolor repellendus quidem! Alias voluptatum enim eius id illum accusamus ut amet rerum delectus</div>
+        <div class="content" id="bioreactor">
+          <div class="text">bioreactor ipsum dolor sit amet, consectetur adipisicing elit. Modi dolor repellendus quidem! Alias voluptatum enim eius id illum accusamus ut amet rerum delectus</div>
         </div>
       </div>
       <div class="item" tabindex="0">
@@ -174,20 +174,45 @@
           <div class="text">Officiis ipsa suscipit, quidem odio, ratione sapiente consectetur nemo voluptatum maxime</div></div>
       </div>
     </div>
+  
 
     <!--Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    <!-- <script>
-      function setupTabs(){
-        document.quarySelectorAll("content").forEach(button => {
-          button.addEventListener("click", () => {
-            const 
-          })
-        })
+    <script>
+      function changeNotebook() {
+        // Declare all variables
+        var selectBox = document.getElementById("nb-select");
+        var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("content");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        // tablinks = document.getElementsByClassName("notebook-selector-item");
+        // for (i = 0; i < tablinks.length; i++) {
+        //   tablinks[i].className = tablinks[i].className.replace(" active", "");
+        // }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(selectedValue).style.display = "block";
+        // evt.currentTarget.className += " active";
       }
-    </script> -->
+      function loadNotebook(){
+        var selectBox = document.getElementById("nb-select");
+        var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+        tabcontent = document.getElementsByClassName("content");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        document.getElementById(selectedValue).style.display = "block";
+      }
+      window.onload = loadNotebook
+    </script>
 
 
   </body>
