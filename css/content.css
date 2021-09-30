@@ -9,7 +9,7 @@
     transform: translateY(-50px);
     margin-bottom: -130px;
     z-index: -1;
-  }
+}
   
   /* GENERAL */
 
@@ -51,4 +51,3 @@ h1, h2{
  .clicked {
     color: #21DEA8;
   }
-  
