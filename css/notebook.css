@@ -105,9 +105,11 @@ img{
   
   /* transform: matrix(1, 0, 0, -1, 0, 0); */
 }
+.select-selected:after{
+  background: linear-gradient(0deg, #E1E1E1, #E1E1E1);
+}
 select{
-  background: linear-gradient(0deg, #875FF4, #875FF4);
-  background-color:#875FF4;
+  background: linear-gradient(0deg, #E1E1E1, #E1E1E1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 683px;
   height: 44px;
@@ -116,8 +118,18 @@ select{
   font-weight: bold;
   font-size: 24px;
   line-height: 33px;
-
   color: #FFFFFF;
+  text-align: center;
+}
+option{
+  background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  /* text-align: left; */
+}
+#nb-select{
+  color: #353535;
+}
+.option:hover{
+  color: #884EFA;
 }
 .notebook-selector-label{
   font-family: Articulat CF;
@@ -195,6 +207,7 @@ select{
 }
 .custom-accordion > .item > content {
   font-size: 1.5rem;
+
 }
 
 @keyframes fadeEffect {
@@ -265,20 +278,60 @@ select{
   }
 
   .custom-accordion > .item:focus > .month {
-    transform: rotate(0deg);
+    /* position: relative; */
+    transform-origin: 0 50%;
+    /* transform: rotate(-90deg); */
+    /* transform: rotate(-90deg); */
     transition: all 0.3s cubic-bezier(0.8, 0.16, 0.42, 0.89);
+
+    /* transform: translateY(-60%); */
+    background: #21DDA7;
+    text-align: center;
+    /* padding: 0.5%; */
+    /* height: 3rem; */
   }
   .custom-accordion > .item:focus > .month > .month-header{
+    /* position:relative; */
     transition: all 0.3s cubic-bezier(0.8, 0.16, 0.42, 0.89);
+    /* text-align: center; */
+    /* color:#301916; */
+    transform-origin: center 25px;
+    transform: rotate(-90deg) translateY(-20px);
+    /* writing-mode: horizontal-tb; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;    
+    /* top: 0; */
+    /* margin-top: -2%; */
+
+  }
+  .custom-accordion > .item:focus > #month1 > .month-header{
+
+  }
+  /* .custom-accordion > .item:not(.open) > .month > .month-header{
+    
+    writing-mode: vertical-rl;
+  } */
+  .custom-accordion:focus > .item > .month > .month-header{
+    color:#301916;
   }
   .custom-accordion > .item > .month{
+    /* display: grid;
+    justify-content: left;
+    align-items: left; */
     position: absolute; 
     /* margin-left: 10%; */
     width: 100%;   
+    height: 50px;
+    overflow: visible;
     right: 0;
+    align-content: center;
+    top: 0;
+    /* margin-left: 50%;
+    margin-right: 50%; */
     /* text-align: left; */
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    transform: rotate(90deg);
+    /* transform: translateX(50%); */
     transition: all 0.3s cubic-bezier(0.8, 0.16, 0.42, 0.89);
   }
   .custom-accordion > .item > .month > .month-header{
@@ -288,8 +341,14 @@ select{
     font-size: 24px;
     line-height: 33px;
     color: #FFFFFF;
-    margin-left: 25%;
-    margin-right: 25%;
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 20px;    
+    /* transform: translateX(6.5vw); */
+    /* margin-left: 7vh;
+    margin-right: 7vh; */
+    transition: all 0.3s cubic-bezier(0.8, 0.16, 0.42, 0.89);
+    writing-mode: vertical-lr;
   }
   .custom-accordion > .item > .icon {
     font-weight: 700;
@@ -320,17 +379,22 @@ select{
   .custom-accordion > .item > .content {
     position: absolute;
     
-    top: 50%;
+    top: 3rem;
     left: 50%;
     width: 100%;
-    height: auto;
+    /* height: auto; */
     color: black;
     background-color: #FFFFFF;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%);
     transition: all 0.3s cubic-bezier(0.8, 0.16, 0.42, 0.89);
     opacity: 0;
     padding: 1rem;
-    pointer-events: none;
+    /* width: 600px; */
+    /* margin-top: 5%; */
+    /* height: 100%;  */
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: left;
   }
 }
 
