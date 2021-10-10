@@ -106,6 +106,9 @@
     </section>
 
     <!-- SIDEBAR -->
+    <!-- potentially make this scale with size -->
+    <!-- potentially move title down, outside of cirlce -->
+    <!-- make arrow green, make active header bold -->
     <div class="sidebar" id="sidebar">
       <div class="container">
         <p id="pct">Insert Page <br> Title</p>
@@ -119,12 +122,12 @@
           </defs>
           <circle class="progress-bar" cx="40%" cy="40%" r="35%"></circle>
         </svg>
-        
+        <!-- Move arrow to the left -->
         <div class="accordion accordion-flush" id="accordionFlushExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-heading1">
               <button  id="accordion-button1" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
-                Header 1 
+                Header 1
               </button>
             </h2>
             <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1" data-bs-parent="#accordionFlushExample">
@@ -166,7 +169,7 @@
     <section id="projectComponent">
       <div class="contentBlock"> 
         <h1 class="top-h1">FIRST PAGE TITLE</h1>
-          <div class="col-md-6"><img src="images/purple-heading-left.svg" alt=""></div>
+          <div class="col-md-6"><img src="images/purple-heading-left.svg" style="margin-left:-10%; margin-top:-1%;" alt=""></div>
           <div class="col-md-6"></div>
         <h2 id="subheader1" class="firstSubheader">SUBHEADER</h2>
         <p>Rare earth elements (REEs) are becoming increasingly ubiquitous in modern technology, playing essential roles in catalytic converters, X-ray and MRI scanning machines, and personal electronic devices. Of the 17 unique elements that make up this group, the majority are classified as lanthanides. Despite metal ore mining remaining the industrial standard for REE production, these metals are not naturally found in large deposits, rendering the mining process unsustainable, costly, and environmentally harmful. Although there are several alternative reservoirs of REEs, such as electronic waste (e-waste) and sewage sludge, recovery of REEs from these sources is largely unsuccessful due to a lack of extraction methods that are both economically feasible and high yield. Given that the annual demand for REEs is predicted to double by 2035, there is therefore an immediate need for a novel system of efficient and sustainable REE production.</p>
@@ -340,9 +343,11 @@
   </body>
   <footer id="page-footer">
     <div class="footer">
-      <div class="row">
+      <div class="row" >
         <div class="col-md-2 first-footer">
-          <img src="images/NEOCYCLE.svg"  class="foot-logo" alt="">
+          <a href="index.html">
+            <img src="images/NEOCYCLE.svg"  class="foot-logo" alt="">
+          </a>
           <h3 class="footer-name">IGEM Calgary 2021</h3>
           <h3>Follow Us</h3>
           <div class="socials">
@@ -354,7 +359,9 @@
           </div>
           <h3>Contact Us</h3>
         </div>
+        <!-- potentially make the headers spaced evenly -->
         <div class="col-md-1">
+          <!-- Make subheaders align with header -->
           <h3 class="white-title">Project</h3>
           <a class="text" href="#">Description</a>
           <br>
