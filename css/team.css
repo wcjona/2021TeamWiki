@@ -6,16 +6,22 @@
     display: none;
   } */
   .aLineAll{
-    display: none;
+    display: block;
   }
-  #aCirId{
+  #aCirId{ 
     opacity : 0;
   }
   .aCirAll{
     opacity: 0;
   }
+  #cirDryLab{
+    opacity: 0;
+  }
+  #cirWetLab{
+    opacity: 0;
+  }
   .aCirOp{
-    opacity : 100;
+    opacity : 1;
   }
   .aCir{
     -webkit-animation-name: show;
@@ -105,13 +111,14 @@
     font-family: Articulat CF;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 3vw;
     line-height: 50px;
 
     color: #21DEA8;
   }
   .description-content-paragraph{
     margin-top: 5%;
+    font-size: 1.5vw;
   }
   
   .description-box-img{
@@ -123,25 +130,61 @@
     margin-left: -10%;
     /* transform: scale(1.21); */
   }
+  #dc-wetlab{
+    margin-top: 4%;
+  }
   .wetlab-labelP1{
     width: 10%;
     position: absolute;
     right: 0%;
-    z-index: 1;
+    z-index: -1;
     /* top:0; */
-    margin-top: -10%;
+    margin-top: -15%;
   }
   .wetlab-labelP2{
     width: 30%;
     position: absolute;
-    right: 12%;
-    z-index: 1;
+    right: 7.05%;
+    z-index: -1;
     /* top:0; */
-    margin-top: 0%;
+    margin-top: -2%;
+  }
+  .advisorslab-labelP1{
+    width: 12%;
+    position: absolute;
+    left: -2%;
+    z-index: -1;
+    /* top:0; */
+    margin-top: -10%;
+  }
+  .advisorslab-labelP2{
+    width: 60%;
+    position: absolute;
+    left: 7.16875%;
+    z-index: -1;
+    /* top:0; */
+    margin-top: -4.3%;
   }
 
   .svg-container-drylab{
     width: 59%;
+    position: absolute;
+    left: 12%;
+    z-index: 1;
+    /* top:0; */
+    margin-top: -33%;
+  }
+  .svg-container-wetlab{
+    width: 79%;
+    position: absolute;
+    left: 4%;
+    z-index: 1;
+    /* top:0; */
+    margin-top: -33%;
+  }
+  .svg-container-advisors{
+    width: 59%;
+    height: 90%;
     position: absolute;
     left: 12%;
     z-index: 1;
@@ -236,6 +279,16 @@
   }
   #banner-shadow{
     margin-top: -31px;
+  }
+  #banner-svg{
+    z-index:1;
+    position: relative;
+  }
+  #banner-png{
+    margin-top:-95%;
+    margin-left: 51%;;
+    width: 36%;
+    z-index: 0;
   }
   
   .nav-link {
